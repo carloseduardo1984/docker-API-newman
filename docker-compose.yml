@@ -1,6 +1,6 @@
 version: "2.0"
 services:
-  spotify_test:
+  test:
       container_name: Integration_test
       build: .
       image: postman_report
