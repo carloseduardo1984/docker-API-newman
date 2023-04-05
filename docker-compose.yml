@@ -6,7 +6,7 @@ services:
       image: postman_report
       command:
         run Casos_de_teste.postman_collection.json
-        --environment workspace.postman_globals.json
+        --environment QA.postman_environment.json
         -r html,cli
         --reporter-html-export report/report.html    
         --reporter-html-template report/template.hbs
