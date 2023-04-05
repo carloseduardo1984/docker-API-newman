@@ -18,5 +18,5 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: Report
-          path: ./src/reports/report.html
+          path: src/reports/report.html
 
