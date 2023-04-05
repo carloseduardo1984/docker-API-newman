@@ -5,8 +5,8 @@ services:
       build: .
       image: postman_report
       command:
-        run Casos_de_teste.postman_collection.json
-        -e environments/workspace.postman_globals.json
+        run src/Casos_de_teste.postman_collection.json
+        -e src/environments/workspace.postman_globals.json
         -r html,cli
         --reporter-html-export report/report.html    
         --reporter-html-template report/template.hbs
