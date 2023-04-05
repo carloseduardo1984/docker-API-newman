@@ -9,6 +9,6 @@ services:
         -e environments/workspace.postman_globals.json
         -r html,cli
         --reporter-html-export ./src/reports/report.html
-        --reporter-html-template ./src/reports/template.hbs
+        
       volumes:
         - ./src:/etc/newman
