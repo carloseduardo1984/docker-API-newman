@@ -7,8 +7,7 @@ services:
       command:
         run Casos_de_teste.postman_collection.json
         -e environments/workspace.postman_globals.json
-        -r html,cli
-        --reporter-html-export src/reports/report.html
+        -r htmlextra --reporter-htmlextra-export src/reports/htmlreport.html
         
       volumes:
         - ./src:/etc/newman
