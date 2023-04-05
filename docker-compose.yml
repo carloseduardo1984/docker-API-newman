@@ -8,7 +8,8 @@ services:
         run Casos_de_teste.postman_collection.json
         -e environments/workspace.postman_globals.json
         -r html,cli
-        --reporter-html-export report/report.html     
+        --reporter-html-export report/report.html    
+        --reporter-html-template report/template.hbs
         
       volumes:
         - ./src:/etc/newman
