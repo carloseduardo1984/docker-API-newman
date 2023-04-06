@@ -13,16 +13,17 @@ services:
         
       volumes:
         - ./src:/etc/newman
-  test2:
-      container_name: Integration_test2
-      build: .
-      image: postman_report
-      command:
-        run Casos_de_teste.postman_collection.json
-        --environment QA.postman_environment.json
-        -r html,cli
-        --reporter-html-export report/report.html    
-        --reporter-html-template report/template.hbs
         
-      volumes:
-        - ./src:/etc/newman
+#   test2:
+#       container_name: Integration_test2
+#       build: .
+#       image: postman_report
+#       command:
+#         run Casos_de_teste.postman_collection.json
+#         --environment QA.postman_environment.json
+#         -r html,cli
+#         --reporter-html-export report/report.html    
+#         --reporter-html-template report/template.hbs
+        
+#       volumes:
+#         - ./src:/etc/newman
