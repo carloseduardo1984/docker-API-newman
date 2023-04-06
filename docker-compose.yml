@@ -13,7 +13,7 @@ services:
         
       volumes:
         - ./src:/etc/newman
- test2:
+  test2:
       container_name: Integration_test2
       build: .
       image: postman_report
