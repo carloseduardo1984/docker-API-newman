@@ -12,9 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Step 1 - Run Docker
+      - name: Step 1 - Run Docker 1
         run: docker-compose up
-      - name: Step 2 - Attach Report
+      - name: Step 2 - Run Docker 2
+        run: docker-compose.qa up
+      - name: Step 3 - Attach Report
         uses: actions/upload-artifact@v2
         with:
           name: Report
